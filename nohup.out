@@ -43,3 +43,14 @@
 [W 11:49:44.654 NotebookApp] Blocking Cross Origin API request for /api/kernelspecs.  Origin: null, Host: 193.206.155.118:8888
 [W 11:49:44.654 NotebookApp] Not Found
 [W 11:49:44.655 NotebookApp] 404 GET /api/kernelspecs?1546944584652 (193.206.155.118) 0.76ms referer=None
+[I 12:02:46.552 NotebookApp] 302 GET / (193.206.155.136) 0.87ms
+[I 12:02:46.574 NotebookApp] 302 GET /tree? (193.206.155.136) 1.12ms
+[W 12:10:12.002 NotebookApp] Collisions detected in /home/frossi/.jupyter/jupyter_notebook_config.py and /home/frossi/.jupyter/jupyter_notebook_config.json config files. /home/frossi/.jupyter/jupyter_notebook_config.json has higher priority: {
+      "NotebookApp": {
+        "password": "'' ignored, using 'sha1:e61c1bb392a2:57638bc87fadae1e15bf3fde4283e5a670366fad'"
+      }
+    }
+[I 12:10:12.174 NotebookApp] Serving notebooks from local directory: /home/frossi/nbinteract-basic-1
+[I 12:10:12.175 NotebookApp] The Jupyter Notebook is running at:
+[I 12:10:12.175 NotebookApp] https://(faramir or 127.0.0.1):8888/
+[I 12:10:12.175 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
