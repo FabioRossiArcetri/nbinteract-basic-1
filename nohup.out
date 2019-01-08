@@ -54,3 +54,39 @@
 [I 12:10:12.175 NotebookApp] The Jupyter Notebook is running at:
 [I 12:10:12.175 NotebookApp] https://(faramir or 127.0.0.1):8888/
 [I 12:10:12.175 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+ERROR:asyncio:Exception in callback BaseAsyncIOLoop._handle_events(4, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(4, 1)>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.7/site-packages/tornado/platform/asyncio.py", line 122, in _handle_events
+    handler_func(fileobj, events)
+  File "/usr/local/lib/python3.7/site-packages/tornado/stack_context.py", line 300, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/tornado/netutil.py", line 262, in accept_handler
+    callback(connection, address)
+  File "/usr/local/lib/python3.7/site-packages/tornado/tcpserver.py", line 263, in _handle_connection
+    do_handshake_on_connect=False)
+  File "/usr/local/lib/python3.7/site-packages/tornado/netutil.py", line 565, in ssl_wrap_socket
+    context = ssl_options_to_context(ssl_options)
+  File "/usr/local/lib/python3.7/site-packages/tornado/netutil.py", line 540, in ssl_options_to_context
+    context.load_cert_chain(ssl_options['certfile'], ssl_options.get('keyfile', None))
+FileNotFoundError: [Errno 2] No such file or directory
+ERROR:asyncio:Exception in callback BaseAsyncIOLoop._handle_events(4, 1)
+handle: <Handle BaseAsyncIOLoop._handle_events(4, 1)>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.7/site-packages/tornado/platform/asyncio.py", line 122, in _handle_events
+    handler_func(fileobj, events)
+  File "/usr/local/lib/python3.7/site-packages/tornado/stack_context.py", line 300, in null_wrapper
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/tornado/netutil.py", line 262, in accept_handler
+    callback(connection, address)
+  File "/usr/local/lib/python3.7/site-packages/tornado/tcpserver.py", line 263, in _handle_connection
+    do_handshake_on_connect=False)
+  File "/usr/local/lib/python3.7/site-packages/tornado/netutil.py", line 565, in ssl_wrap_socket
+    context = ssl_options_to_context(ssl_options)
+  File "/usr/local/lib/python3.7/site-packages/tornado/netutil.py", line 540, in ssl_options_to_context
+    context.load_cert_chain(ssl_options['certfile'], ssl_options.get('keyfile', None))
+FileNotFoundError: [Errno 2] No such file or directory
