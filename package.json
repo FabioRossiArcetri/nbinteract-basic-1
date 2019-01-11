@@ -1,0 +1,17 @@
+{
+  "name": "frossi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nbinteract": "^0.2.4"
+  },
+  "devDependencies": {
+    "webpack": "^4.28.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
