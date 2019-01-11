@@ -13270,12 +13270,24 @@ div#notebook {
 
 
 <!-- Loads nbinteract package -->
-<script src="http://localhost:8080/index.bundle.js"></script>
+<script src="https://unpkg.com/nbinteract-core" async></script>
 <script>
-  var interact = new NbInteract({
-    nbUrl: 'http://localhost:8889/',
-  })
-  interact.prepare()
+  (function setupNbinteract() {
+    // If NbInteract hasn't loaded, wait one second and try again
+    if (window.NbInteract === undefined) {
+      setTimeout(setupNbinteract, 1000)
+      return
+    }
+
+    var interact = new window.NbInteract({
+      spec: 'FabioRossiArcetri/nbinteract-basic-1/master',
+      baseUrl: 'https://mybinder.org',
+      provider: 'gh',
+    })
+    interact.prepare()
+
+    window.interact = interact
+  })()
 </script>
     </div>
   </div>
